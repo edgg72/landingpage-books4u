@@ -112,7 +112,8 @@ section#about {
 }
 
 section#about h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  transform: translateY(30%);
 }
 
 section#about .about-upper {
@@ -137,7 +138,7 @@ section#about .about-r {
 }
 
 section#about .about-r h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 section#about .about-r .about-r_container {
@@ -170,6 +171,12 @@ section#about .about-p {
 }
 
 @media screen and (max-width: 968px) {
+  aside.Bb h1 {
+    font-size: 2.5rem;
+  }
+  aside.Bb p {
+    font-size: 1.3rem;
+  }
   section#home .Ab p {
     font-size: 18px;
   }
@@ -180,6 +187,9 @@ section#about .about-p {
   .about-upper {
     flex-direction: column;
   }
+  section#about .about-p {
+    font-size: 16px;
+  }
   section.about-r {
     padding: 20px 0;
   }
@@ -189,6 +199,13 @@ section#about .about-p {
   }
   section#about .social-icons {
     flex-direction: column;
+  }
+  section#about h1 {
+    margin-top: 25px;
+    font-size: 30px;
+  }
+  section#about h2 {
+    font-size: 25px;
   }
 }
 
@@ -211,7 +228,7 @@ section#about .about-p {
     font-size: 16px;
   }
   section#about .about-l p {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
@@ -278,6 +295,7 @@ section#about .about-p {
   position: relative;
   width: 90%;
   height: 400px;
+  min-width: 500px;
   margin: 10px;
   background: #1d212b;
   transform: translateY(12%);
@@ -356,14 +374,15 @@ section#about .about-p {
 
 @media (max-width: 820px) {
   .img-slider {
-    width: 400px;
+    min-width: 400px;
     height: 375px;
+  }
+  .img-slider .slide img {
+    width: 300px;
+    height: 350px;
   }
   .img-slider .slide .info {
     padding: 10px 25px;
-  }
-  .img-slider .slide .info h2 {
-    font-size: 35px;
   }
   .img-slider .slide .info p {
     width: 70%;
@@ -381,8 +400,12 @@ section#about .about-p {
 
 @media (max-width: 620px) {
   .img-slider {
-    width: 400px;
+    width: 300px;
     height: 250px;
+  }
+  .img-slider .slide img {
+    width: 280px;
+    height: 220px;
   }
   .img-slider .slide .info {
     padding: 10px 20px;

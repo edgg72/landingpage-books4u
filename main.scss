@@ -116,7 +116,8 @@ section {
     justify-content: space-evenly;
 
     & h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
+      transform: translateY(30%);
     }
 
     & .about-upper {
@@ -139,7 +140,7 @@ section {
       justify-content: center;
 
       & h2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
       }
 
       & .about-r_container {
@@ -174,6 +175,12 @@ section {
 }
 
 @media screen and (max-width: 968px) {
+  aside.Bb h1 {
+    font-size: 2.5rem;
+  }
+  aside.Bb p {
+    font-size: 1.3rem;
+  }
   section#home {
     & .Ab {
       & p {
@@ -188,6 +195,10 @@ section {
   .about-upper {
     flex-direction: column;
   }
+
+  section#about .about-p {
+    font-size: 16px;
+  }
   section.about-r {
     padding: 20px 0;
   }
@@ -199,6 +210,13 @@ section {
 
     & .social-icons {
       flex-direction: column;
+    }
+    & h1 {
+      margin-top: 25px;
+      font-size: 30px;
+    }
+    & h2 {
+      font-size: 25px;
     }
   }
 }
@@ -230,7 +248,7 @@ section {
     }
 
     & .about-l p {
-      font-size: 18px;
+      font-size: 15px;
     }
   }
 }
@@ -298,6 +316,7 @@ section {
   position: relative;
   width: 90%;
   height: 400px;
+  min-width: 500px;
   margin: 10px;
   background: #1d212b;
   transform: translateY(12%);
@@ -374,16 +393,17 @@ section {
 
 @media (max-width: 820px) {
   .img-slider {
-    width: 400px;
+    min-width: 400px;
     height: 375px;
+  }
+
+  .img-slider .slide img {
+    width: 300px;
+    height: 350px;
   }
 
   .img-slider .slide .info {
     padding: 10px 25px;
-  }
-
-  .img-slider .slide .info h2 {
-    font-size: 35px;
   }
 
   .img-slider .slide .info p {
@@ -404,8 +424,12 @@ section {
 
 @media (max-width: 620px) {
   .img-slider {
-    width: 400px;
+    width: 300px;
     height: 250px;
+  }
+  .img-slider .slide img {
+    width: 280px;
+    height: 220px;
   }
 
   .img-slider .slide .info {
