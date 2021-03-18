@@ -400,18 +400,18 @@ section#about .about-p {
 
 @media (max-width: 620px) {
   .img-slider {
-    width: 300px;
+    width: 250px;
     height: 250px;
   }
   .img-slider .slide img {
-    width: 280px;
+    width: 240px;
     height: 220px;
   }
   .img-slider .slide .info {
     padding: 10px 20px;
   }
   .img-slider .slide .info h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
   .img-slider .slide .info p {
     width: 80%;
@@ -429,14 +429,18 @@ section#about .about-p {
 
 @media (max-width: 420px) {
   .img-slider {
-    width: 320px;
+    width: 180px;
     height: 200px;
+  }
+  .img-slider .slide img {
+    width: 170px;
+    height: 190px;
   }
   .img-slider .slide .info {
     padding: 5px 10px;
   }
   .img-slider .slide .info h2 {
-    font-size: 25px;
+    font-size: 18px;
   }
   .img-slider .slide .info p {
     width: 90%;
